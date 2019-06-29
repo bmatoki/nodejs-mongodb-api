@@ -1,6 +1,23 @@
 # nodejs-mongodb-simple-api
 this is simple crud operations for mongodb using mongoose.
 
+in case you need to add a relation (ObjectID) add to your schema:
+
+```
+ user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'users',
+        required: [true, 'user is required']
+    }
+```
+
+and don't forget to populate.
+example :
+
+```
+schema.find({}).populate('users');
+```
+
 
 ## Getting Started
 
