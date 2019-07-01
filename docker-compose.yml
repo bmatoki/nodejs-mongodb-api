@@ -13,7 +13,5 @@ services:
 
 
   mongodb:
-    build:
-      context: mongodb-docker/
-    ports:
-      - "27017:27017"
+    image: mongo
+
