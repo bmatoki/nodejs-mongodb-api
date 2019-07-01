@@ -1,6 +1,6 @@
 module.exports = {
   production: {
-    DB_HOST: 'mongodb://localhost',
+    DB_HOST: 'mongodb://mongodb',
     DB_PORT: '27017',
     DB_NAME: 'persons',
     logger: {

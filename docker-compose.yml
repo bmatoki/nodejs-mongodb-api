@@ -2,7 +2,8 @@ version: '3'
 services:
   mongodb-api:
     build: .
-    command: nodemon -L --inspect=0.0.0.0:5858
+    #command: nodemon -L --inspect=0.0.0.0:5858
+    command: "pm2-runtime ecosystem.config.js --env production"
     volumes:
       - '.:/usr/src/app'
     ports:
